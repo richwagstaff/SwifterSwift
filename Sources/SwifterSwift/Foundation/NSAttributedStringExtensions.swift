@@ -75,16 +75,6 @@ public extension NSAttributedString {
     }
     #endif
 
-    #if canImport(AppKit) || canImport(UIKit)
-    /// SwifterSwift: Add color to NSAttributedString.
-    ///
-    /// - Parameter color: text color.
-    /// - Returns: a NSAttributedString colored with given color.
-    func colored(with color: Color) -> NSAttributedString {
-        return applying(attributes: [.foregroundColor: color])
-    }
-    #endif
-
     #if !os(Linux)
     /// SwifterSwift: Apply attributes to substrings matching a regular expression
     ///

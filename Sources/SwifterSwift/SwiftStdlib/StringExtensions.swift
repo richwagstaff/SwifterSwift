@@ -1148,16 +1148,6 @@ public extension String {
     }
     #endif
 
-    #if canImport(AppKit) || canImport(UIKit)
-    /// SwifterSwift: Add color to string.
-    ///
-    /// - Parameter color: text color.
-    /// - Returns: a NSAttributedString versions of string colored with given color.
-    func colored(with color: Color) -> NSAttributedString {
-        return NSMutableAttributedString(string: self, attributes: [.foregroundColor: color])
-    }
-    #endif
-
 }
 
 #endif
